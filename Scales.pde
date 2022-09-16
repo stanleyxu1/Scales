@@ -26,8 +26,8 @@ void scale(int x, int y) {
   beginShape();
   fill(0, (int)(Math.random()*170), 30);
   noStroke();
-  curveVertex (x+20, y+60);
-  curveVertex(x+60, y+60);
+  vertex (x+20, y+60);
+  vertex (x+60, y+60);
   curveVertex(x+65, y+60);
   curveVertex(x+65, y+60);
   curveVertex(x+60, y+20);
