@@ -26,7 +26,6 @@ void scale(int x, int y) {
   beginShape();
   fill(0, (int)(Math.random()*170), 30);
   noStroke();
-  triangle(x+20, y+60, x+40, y+20, x+20, y+60);
   curveVertex(x+65, y+60);
   curveVertex(x+65, y+60);
   curveVertex(x+60, y+20);
@@ -40,4 +39,7 @@ void scale(int x, int y) {
   curveVertex(x+20, y+60);
   curveVertex(x+20, y+60);
   endShape(CLOSE);
+  beginShape();
+    triangle(x+20, y+60, x+40, y+20, x+20, y+60);
+    endShape(CLOSE);
 }
